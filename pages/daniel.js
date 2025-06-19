@@ -26,17 +26,13 @@ export default function DanielsHunt() {
       </section>
 
       {/* Video Section */}
-      <section style={{ padding: "2rem 1rem", maxWidth: "1000px", margin: "0 auto" }}>
-        <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
-          <iframe
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-            title="Daniel’s Hunt"
-            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </section>
+      <section style={{ textAlign: 'center', marginTop: '3rem' }}>
+  <video width="800" controls style={{ borderRadius: '8px' }}>
+    <source src="/daniel-hunt-optimized.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</section>
+
 
       {/* Story Section */}
       <section style={{ padding: "2rem 1rem", maxWidth: "800px", margin: "0 auto" }}>
