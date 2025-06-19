@@ -2,27 +2,36 @@ import React from "react";
 
 export default function DanielsHunt() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main style={{ minHeight: "100vh", backgroundColor: "#000", color: "#fff", fontFamily: "sans-serif" }}>
       {/* Hero Section */}
-      <section className="relative h-[70vh] overflow-hidden">
+      <section style={{ position: "relative", height: "70vh", overflow: "hidden" }}>
         <img
           src="/daniel-hero.jpg"
           alt="Daniel's First Hunt"
-          className="object-cover w-full h-full opacity-60"
+          style={{ objectFit: "cover", width: "100%", height: "100%", opacity: 0.6 }}
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold">Daniel’s First Hunt</h1>
-          <p className="mt-2 text-xl">Springbuck | Eastern Cape | 2023</p>
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          padding: "0 1rem"
+        }}>
+          <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>Daniel’s First Hunt</h1>
+          <p style={{ marginTop: "0.5rem", fontSize: "1.25rem" }}>Springbuck | Eastern Cape | 2023</p>
         </div>
       </section>
 
       {/* Video Section */}
-      <section className="py-10 px-4 md:px-20">
-        <div className="aspect-w-16 aspect-h-9 w-full max-w-5xl mx-auto">
+      <section style={{ padding: "2rem 1rem", maxWidth: "1000px", margin: "0 auto" }}>
+        <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
           <iframe
             src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
             title="Daniel’s Hunt"
-            className="w-full h-full"
+            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
             frameBorder="0"
             allowFullScreen
           ></iframe>
@@ -30,33 +39,33 @@ export default function DanielsHunt() {
       </section>
 
       {/* Story Section */}
-      <section className="py-10 px-4 md:px-20 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">The Story</h2>
-        <p className="leading-relaxed">
+      <section style={{ padding: "2rem 1rem", maxWidth: "800px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>The Story</h2>
+        <p style={{ lineHeight: "1.6" }}>
           Daniel’s first hunting experience was unforgettable. At just 8 years old, he took his first Springbuck as part of a youth program run by Splitting Image Taxidermy. They mounted the buck for free, creating a memory that will last a lifetime. SafariLegacy was born from this moment.
         </p>
       </section>
 
       {/* Photo Gallery */}
-      <section className="py-10 px-4 md:px-20">
-        <h2 className="text-2xl font-semibold mb-6 text-center">Photo Gallery</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <img src="/gallery1.jpg" alt="Daniel Hunt 1" className="rounded-lg" />
-          <img src="/gallery2.jpg" alt="Daniel Hunt 2" className="rounded-lg" />
-          <img src="/gallery3.jpg" alt="Daniel Hunt 3" className="rounded-lg" />
+      <section style={{ padding: "2rem 1rem", maxWidth: "1200px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "center" }}>Photo Gallery</h2>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
+          <img src="/gallery1.jpg" alt="Daniel Hunt 1" style={{ borderRadius: "8px", width: "30%" }} />
+          <img src="/gallery2.jpg" alt="Daniel Hunt 2" style={{ borderRadius: "8px", width: "30%" }} />
+          <img src="/gallery3.jpg" alt="Daniel Hunt 3" style={{ borderRadius: "8px", width: "30%" }} />
         </div>
       </section>
 
       {/* Hunt Details */}
-      <section className="py-10 px-4 md:px-20 max-w-4xl mx-auto text-sm text-gray-400">
+      <section style={{ padding: "2rem 1rem", maxWidth: "800px", margin: "0 auto", fontSize: "0.9rem", color: "#ccc" }}>
         <p>Date: <strong>23 July 2023</strong></p>
         <p>Species: <strong>Springbuck</strong></p>
         <p>Location: <strong>Eastern Cape, South Africa</strong></p>
       </section>
 
       {/* Footer CTA */}
-      <footer className="py-10 text-center">
-        <a href="/" className="text-lg underline hover:text-yellow-400">
+      <footer style={{ padding: "2rem 0", textAlign: "center" }}>
+        <a href="/" style={{ fontSize: "1.125rem", color: "#fff", textDecoration: "underline" }}>
           Relive Another Hunt →
         </a>
       </footer>
