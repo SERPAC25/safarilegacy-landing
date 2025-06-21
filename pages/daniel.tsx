@@ -1,15 +1,20 @@
+// ✅ daniel.tsx — Daniel's First Hunt Memory Page
+
 import React from "react";
 
 export default function DanielsHunt() {
   return (
-    <main style={{ minHeight: "100vh", backgroundColor: "#000", color: "#fff", fontFamily: "sans-serif" }}>
-
+    <main style={{
+      minHeight: "100vh",
+      backgroundColor: "#000",
+      color: "#fff",
+      fontFamily: "sans-serif"
+    }}>
       {/* Hero Section */}
       <section style={{ position: "relative", height: "70vh", overflow: "hidden" }}>
         <img
           src="/daniel-hero.jpg"
           alt="Daniel's First Hunt"
-          loading="lazy"
           style={{ objectFit: "cover", width: "100%", height: "100%", opacity: 0.6 }}
         />
         <div style={{
@@ -53,15 +58,10 @@ export default function DanielsHunt() {
       {/* Photo Gallery */}
       <section style={{ padding: "2rem 1rem", maxWidth: "1200px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "center" }}>Photo Gallery</h2>
-        <div style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "1rem",
-          justifyContent: "center"
-        }}>
-          <img src="/gallery1.jpg" alt="Daniel Hunt 1" loading="lazy" style={{ borderRadius: "8px", maxWidth: "300px", width: "100%" }} />
-          <img src="/gallery2.jpg" alt="Daniel Hunt 2" loading="lazy" style={{ borderRadius: "8px", maxWidth: "300px", width: "100%" }} />
-          <img src="/gallery3.jpg" alt="Daniel Hunt 3" loading="lazy" style={{ borderRadius: "8px", maxWidth: "300px", width: "100%" }} />
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
+          <img src="/gallery1.jpg" alt="Daniel Hunt 1" style={{ borderRadius: "8px", width: "30%" }} />
+          <img src="/gallery2.jpg" alt="Daniel Hunt 2" style={{ borderRadius: "8px", width: "30%" }} />
+          <img src="/gallery3.jpg" alt="Daniel Hunt 3" style={{ borderRadius: "8px", width: "30%" }} />
         </div>
       </section>
 
@@ -73,7 +73,7 @@ export default function DanielsHunt() {
       </section>
 
       {/* Footer */}
-       <footer style={{ padding: "2rem 0", textAlign: "center" }}>
+      <footer style={{ padding: "2rem 0", textAlign: "center" }}>
         <a href="/" style={{ fontSize: "1.125rem", color: "#fff", textDecoration: "underline" }}>
           Relive Another Hunt →
         </a>
