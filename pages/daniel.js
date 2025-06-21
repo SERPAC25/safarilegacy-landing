@@ -7,12 +7,12 @@ export default function DanielHuntPage() {
     <div style={{ backgroundColor: '#f5f3ef', fontFamily: 'sans-serif', padding: '2rem', color: '#2c2b28' }}>
       <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
         <h1 style={{ fontSize: '2.5rem' }}>Daniel’s First Hunt</h1>
-        <p style={{ fontSize: '1.2rem', color: '#6e665f' }}>Springbuck • Free State • April 2024</p>
+        <p style={{ fontSize: '1.2rem', color: '#6e665f' }}>Springbuck • Eastern Cape • 2023</p>
       </header>
 
       <section style={{ textAlign: 'center', marginBottom: '2rem' }}>
         <Image
-          src="/daniel-hero.jpg" // Replace with your actual image path
+          src="/daniel-hero.jpg"
           alt="Daniel's Springbuck Trophy"
           width={800}
           height={450}
@@ -41,7 +41,7 @@ export default function DanielHuntPage() {
               top: 0,
               left: 0,
               width: '100%',
-              height: '100%'
+              height: '100%',
             }}
           ></iframe>
         </div>
@@ -52,13 +52,6 @@ export default function DanielHuntPage() {
           The buck was mounted and gifted to him by the team, a gesture that sparked the idea for
           SafariLegacy. This page is dedicated to that memory — and every future one that follows.
         </p>
-      </section>
-
-      <section style={{ textAlign: 'center', marginTop: '3rem' }}>
-        <video width="800" controls style={{ borderRadius: '8px' }}>
-          <source src="/daniel-hunt-optimized.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
       </section>
 
       <footer style={{ textAlign: 'center', marginTop: '4rem', fontSize: '0.9rem', color: '#999' }}>
