@@ -1,49 +1,44 @@
 // pages/daniel.js
 
-import Image from 'next/image';
-
-export default function DanielHuntPage() {
+export default function DanielFirstHunt() {
   return (
-    <div style={{ backgroundColor: '#f5f3ef', fontFamily: 'sans-serif', padding: '2rem', color: '#2c2b28' }}>
-      
-      <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <h1 style={{ fontSize: '2.5rem' }}>Daniel’s First Hunt</h1>
-        <p style={{ fontSize: '1.2rem', color: '#6e665f' }}>Springbuck | Eastern Cape | 2023</p>
-      </header>
+    <div style={{ fontFamily: "Arial, sans-serif", padding: "2rem", backgroundColor: "#fdfdfd" }}>
+      {/* Hero Section */}
+      <h1 style={{ fontSize: "2rem", marginBottom: "0.5rem", color: "#1a1a1a" }}>Daniel’s First Hunt</h1>
+      <p style={{ fontSize: "1.1rem", color: "#6c6c6c" }}>Springbuck | Eastern Cape | 2023</p>
 
-      <section style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <Image
-          src="/daniel-hero.jpg"
-          alt="Daniel's Springbuck Trophy"
-          width={800}
-          height={450}
-          style={{ borderRadius: '8px' }}
-        />
-      </section>
+      {/* Vimeo Video */}
+      <div style={{ position: "relative", paddingTop: "56.25%", marginTop: "2rem", marginBottom: "2rem" }}>
+        <iframe
+          src="https://player.vimeo.com/video/1095256795?h=8e84d11675&badge=0&autopause=0&player_id=0&app_id=58479"
+          style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          allowFullScreen
+          title="Daniel's First Hunt 2024"
+        ></iframe>
+      </div>
 
-      <section style={{ textAlign: 'center', marginBottom: '2rem' }}>
-        <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-          <iframe
-            src="https://player.vimeo.com/video/1095256795?h=8e84d11675&badge=0&autopause=0&player_id=0&app_id=58479"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-            allowFullScreen
-            title="Daniel's First Hunt 2024"
-            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-          ></iframe>
-        </div>
-      </section>
+      {/* Story Section */}
+      <h2 style={{ fontSize: "1.5rem", marginBottom: "1rem", color: "#1a1a1a" }}>The Story</h2>
+      <p style={{ lineHeight: "1.6", fontSize: "1rem", color: "#333", maxWidth: "800px" }}>
+        Daniel’s first hunting experience was unforgettable. At just 8 years old, he took his first Springbuck as part of a youth program
+        run by Splitting Image Taxidermy. They mounted the buck for free, creating a memory that will last a lifetime.
+        SafariLegacy was born from this moment.
+      </p>
 
-      <section style={{ maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', lineHeight: '1.6' }}>
-        <h2 style={{ textAlign: 'center', marginTop: '2rem' }}>The Story</h2>
-        <p>
-          Daniel’s first hunting experience was unforgettable. At just 8 years old, he took his first Springbuck as part of a youth program run by Splitting Image Taxidermy. They mounted the buck for free, creating a memory that will last a lifetime. SafariLegacy was born from this moment.
-        </p>
-      </section>
-
-      <footer style={{ textAlign: 'center', marginTop: '4rem', fontSize: '0.9rem', color: '#999' }}>
-        <p>Want to create a memory like this? <a href="/" style={{ color: '#5a422e' }}>Visit SafariLegacy.co.za</a></p>
-      </footer>
+      {/* Gallery Section */}
+      <h2 style={{ fontSize: "1.5rem", marginTop: "2rem", marginBottom: "1rem", color: "#1a1a1a" }}>Photo Gallery</h2>
+      <img
+        src="/daniel-hunt.jpg"
+        alt="Daniel holding his first Springbuck trophy"
+        style={{
+          width: "100%",
+          maxWidth: "800px",
+          borderRadius: "8px",
+          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)"
+        }}
+      />
     </div>
   );
 }
