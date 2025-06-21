@@ -34,17 +34,17 @@ export default function DanielsHunt() {
 
       {/* Vimeo Video Embed */}
       <section style={{ padding: "2rem 1rem", maxWidth: "1000px", margin: "0 auto" }}>
-        <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
-          <iframe
-            src="https://player.vimeo.com/video/1095256795?h=8e84d11675&badge=0&autopause=0&player_id=0&app_id=58479"
-            title="Daniel’s Hunt"
-            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </section>
+  <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+    <iframe
+      src="https://player.vimeo.com/video/1095256795?h=8e84d11675&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+      frameBorder="0"
+      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+      style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+      title="Daniels first hunt 2024"
+      allowFullScreen
+    ></iframe>
+  </div>
+</section>
 
       {/* Story Section */}
       <section style={{ padding: "2rem 1rem", maxWidth: "800px", margin: "0 auto" }}>
