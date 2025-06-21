@@ -9,18 +9,25 @@ export default function Home() {
         <meta name="description" content="A digital memory vault for hunters. Relive the Hunt with SafariLegacy." />
       </Head>
 
-      <main className="flex items-center justify-center min-h-screen bg-black text-white">
-        <div className="text-center px-6">
-          {/* Placeholder for Logo */}
-          <img src="/logo-white.png" alt="SafariLegacy Logo" className="mx-auto w-48 mb-8" />
+      <main className="flex items-center justify-center min-h-screen bg-black text-[#d4af37] px-4">
+        <div className="text-center">
+          <img
+            src="/logo-gold.png"
+            alt="SafariLegacy Logo"
+            className="mx-auto w-64 md:w-80 mb-10"
+          />
 
-          <h1 className="text-4xl font-bold mb-4">Relive the Hunt</h1>
-          <p className="text-lg text-gray-300 mb-10">
-            We’re building something meaningful.<br />
-            A new way to preserve and relive hunting memories.
+          <h1 className="text-4xl md:text-5xl font-semibold tracking-wide mb-6">
+            Relive the Hunt
+          </h1>
+
+          <p className="text-lg md:text-xl text-[#f9f9f9] mb-12 max-w-xl mx-auto">
+            We’re building something meaningful —<br /> a new way to preserve and relive hunting memories.
           </p>
 
-          <p className="text-sm text-gray-500">© {new Date().getFullYear()} SafariLegacy. All rights reserved.</p>
+          <footer className="text-sm text-gray-500">
+            © {new Date().getFullYear()} SafariLegacy. All rights reserved.
+          </footer>
         </div>
       </main>
     </>
