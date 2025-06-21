@@ -26,31 +26,30 @@ export default function DanielsHunt() {
         </div>
       </section>
 
-      {/* Vimeo Video Section */}
+      {/* Vimeo Video Embed */}
       <section style={{ padding: "2rem 1rem", maxWidth: "1000px", margin: "0 auto" }}>
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
           <iframe
-            src="https://player.vimeo.com/video/YOUR_VIMEO_ID"
-            title="Daniel’s Hunt"
-            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+            src="https://player.vimeo.com/video/1095256795?h=8e84d11675&badge=0&autopause=0&player_id=0&app_id=58479"
+            title="Daniel’s First Hunt 2024"
             frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             allowFullScreen
+            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
           ></iframe>
         </div>
       </section>
 
-      {/* The Story Section */}
+      {/* Story Section */}
       <section style={{ padding: "2rem 1rem", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>The Story</h2>
         <p style={{ lineHeight: "1.6" }}>
-          Daniel’s first hunting experience was unforgettable. At just 8 years old, he took his first Springbuck
-          as part of a youth program run by Splitting Image Taxidermy. They mounted the buck for free,
-          creating a memory that will last a lifetime. SafariLegacy was born from this moment.
+          Daniel’s first hunting experience was unforgettable. At just 8 years old, he took his first Springbuck as part of a youth program run by Splitting Image Taxidermy.
+          They mounted the buck for free, creating a memory that will last a lifetime. SafariLegacy was born from this moment.
         </p>
       </section>
 
-      {/* Photo Gallery Section */}
+      {/* Photo Gallery */}
       <section style={{ padding: "2rem 1rem", maxWidth: "1200px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "1.5rem", marginBottom: "1rem", textAlign: "center" }}>Photo Gallery</h2>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
@@ -60,7 +59,7 @@ export default function DanielsHunt() {
         </div>
       </section>
 
-      {/* Hunt Details */}
+      {/* Hunt Metadata */}
       <section style={{ padding: "2rem 1rem", maxWidth: "800px", margin: "0 auto", fontSize: "0.9rem", color: "#ccc" }}>
         <p>Date: <strong>23 July 2023</strong></p>
         <p>Species: <strong>Springbuck</strong></p>
