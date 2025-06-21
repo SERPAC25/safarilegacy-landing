@@ -1,26 +1,25 @@
+import React from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div style={{
-      backgroundColor: '#2f2b24',
-      color: '#f0e6d2',
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontFamily: 'sans-serif',
-      textAlign: 'center',
-      padding: '2rem'
-    }}>
-      <img src="/logo.png" alt="SafariLegacy Logo" style={{ width: 120, marginBottom: '1.5rem' }} />
-      <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>SafariLegacy</h1>
-      <h2 style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>Relive the Hunt</h2>
-      <p style={{ maxWidth: '500px', fontSize: '1.1rem' }}>
-        We’re building something special — a place where every trophy tells a story.
-        Check back soon to relive the wild through memory pages, reels, and more.
+    <main style={{ fontFamily: "sans-serif", textAlign: "center", padding: "4rem", backgroundColor: "#f5f3ef", color: "#2c2b28" }}>
+      <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>Welcome to SafariLegacy</h1>
+      <p style={{ fontSize: "1.25rem", marginBottom: "2rem" }}>
+        Preserving memories of your most meaningful hunts.
       </p>
-      <p style={{ marginTop: '2rem', fontSize: '0.9rem' }}>© {new Date().getFullYear()} SafariLegacy. All rights reserved.</p>
-    </div>
+      <Link href="/daniel">
+        <a style={{
+          backgroundColor: "#5a422e",
+          color: "#fff",
+          padding: "1rem 2rem",
+          borderRadius: "8px",
+          fontSize: "1rem",
+          textDecoration: "none"
+        }}>
+          View Daniel’s First Hunt
+        </a>
+      </Link>
+    </main>
   );
 }
