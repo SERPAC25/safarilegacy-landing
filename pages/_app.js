@@ -1,4 +1,6 @@
+// pages/_app.js
 import Head from "next/head";
+import "../styles/globals.css"; // make sure Tailwind or global CSS is imported
 
 function MyApp({ Component, pageProps }) {
   return (
