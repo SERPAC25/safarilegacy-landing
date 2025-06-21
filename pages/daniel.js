@@ -31,7 +31,7 @@ export default function DanielHuntPage() {
       <section style={{ textAlign: 'center', marginTop: '2rem' }}>
         <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
           <iframe
-            src="https://www.youtube-nocookie.com/embed/D8RxP1ve8uQ?rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/oYvWmnAqS-4?rel=0&modestbranding=1"
             title="Daniel’s First Hunt – Springbuck"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -63,4 +63,4 @@ export default function DanielHuntPage() {
     </div>
   );
 }
-Fix: YouTube video embed using nocookie link
+
